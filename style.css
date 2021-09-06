@@ -1,0 +1,1785 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+}
+
+.header {
+  z-index: 10;
+  width: 100vw;
+  height: 4rem;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header .x {
+  overflow: hidden;
+  left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .x i {
+  overflow: hidden;
+  font-size: 3rem;
+  color: #73bdd7;
+}
+
+.header .sen {
+  left: 2rem;
+  position: relative;
+  background-color: #1b1f3b;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.header .sen i {
+  font-size: 3rem;
+  color: #73bdd7;
+  overflow: hidden;
+}
+
+.nav {
+  background-color: #1b1f3b;
+  width: 0vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  position: fixed;
+  overflow: hidden;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nav ul {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #73bdd7;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fafffd;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav ul li a:hover {
+  color: #fafffd;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.homePage {
+  width: 100vw;
+  height: auto;
+  background: #73bdd7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#73bdd7), color-stop(8%, #78c2db), color-stop(28%, white));
+  background: linear-gradient(0deg, #73bdd7 0%, #78c2db 8%, white 28%);
+}
+
+.homePage svg {
+  width: 100%;
+  height: auto;
+}
+
+.homePage svg #pathNeki {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.aboutMePage {
+  background-color: #73bdd7;
+  background-image: url(./img/BackgroundAboutMe.svg);
+  top: 0;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aboutMePage .linkFirst {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.aboutMePage .linkFirst .linkFirst a {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutMePage .contentAbout {
+  width: 100%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.aboutMePage .contentAbout .contentText {
+  overflow: hidden;
+  width: 90%;
+  height: auto;
+  color: #fafffd;
+}
+
+.aboutMePage .contentAbout .contentText .h {
+  border-radius: 10px;
+  width: auto;
+  height: 7rem;
+  background: #73bdd7;
+  background: linear-gradient(156deg, #73bdd7 0%, #57c8f0 33%, #15a2d4 66%, #0082b0 100%);
+  overflow: hidden;
+}
+
+.aboutMePage .contentAbout .contentText .h::before {
+  content: "";
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(115, 189, 215, 0.5);
+  position: absolute;
+  -webkit-backdrop-filter: contrast(500%) blur(1px);
+          backdrop-filter: contrast(500%) blur(1px);
+  border-radius: 10px;
+}
+
+.aboutMePage .contentAbout .contentText h1 {
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.aboutMePage .contentAbout .contentText h3 {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.aboutMePage .contentAbout .contentText p {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.aboutMePage .contentAbout .contentText .firstP {
+  border-bottom: 1px solid #1b1f3b;
+  color: #1b1f3b;
+}
+
+.aboutMePage .contentAbout .contentText .secondP {
+  border-top: 1px solid #1b1f3b;
+  color: #1b1f3b;
+}
+
+.aboutMePage .contentAbout .contentText p::first-letter {
+  font-size: 200%;
+  background-color: #fafffd;
+  color: #73bdd7;
+}
+
+.aboutMePage .contentAbout .contentText .list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMePage .contentAbout .contentText .list .firstImg {
+  margin: 1rem;
+  width: 25rem;
+  height: 25rem;
+  background-image: url(./img/Certificates/compliteWebDev.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.aboutMePage .contentAbout .contentText .list .secondImg {
+  margin: 1rem;
+  width: 25rem;
+  height: 25rem;
+  background-image: url(./img/Certificates/SEO.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.aboutMePage .contentAbout .contentText .list .thirdImg {
+  margin: 1rem;
+  width: 25rem;
+  height: 25rem;
+  background-image: url(./img/Certificates/modernJS.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.aboutMePage .contentAbout .links {
+  text-decoration: none;
+  color: #fafffd;
+  background-color: #92a9a7;
+}
+
+.projectsPage {
+  width: 100vw;
+  height: auto;
+  background-color: #73bdd7;
+}
+
+.projectsPage .linkSecond {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.projectsPage .linkSecond .linkSecond a {
+  width: 100%;
+  height: 100%;
+}
+
+.projectsPage h1 {
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+}
+
+.projectsPage .projectPageContent {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projectsPage .projectPageContent .up {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectsPage .projectPageContent .up .firstUp,
+.projectsPage .projectPageContent .up .secondUp,
+.projectsPage .projectPageContent .up .thirdUp,
+.projectsPage .projectPageContent .up .fourthUp {
+  width: 15rem;
+  height: 25rem;
+  margin: 0.2rem;
+  margin-top: 5rem;
+}
+
+.projectsPage .projectPageContent .up .firstUp {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .up .firstUp .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .firstUp img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .up .firstUp .firstUpContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .up .firstUp h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .up .firstUp p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .up .firstUp .hash {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .firstUp .hash a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .up .firstUp .firstUpText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .up .firstUp .firstUpText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .up .firstUp .firstUpText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .up .firstUp:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .up .secondUp {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .up .secondUp .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .secondUp img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .up .secondUp .secondUpContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .up .secondUp h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .up .secondUp p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .up .secondUp .hashSecond {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .secondUp .hashSecond a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .up .secondUp .secondUpText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .up .secondUp .secondUpText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .up .secondUp .secondUpText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .up .secondUp:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .up .thirdUp {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .thirdUp img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .thirdUpContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .up .thirdUp h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .up .thirdUp p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .hashThird {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .hashThird a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .thirdUpText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .thirdUpText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .up .thirdUp .thirdUpText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .up .thirdUp:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .up .fourthUp {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .fourthUp img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .fourthUpContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .up .fourthUp h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .up .fourthUp p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .hashFourth {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .hashFourth a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .fourthUpText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .fourthUpText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.projectsPage .projectPageContent .up .fourthUp .fourthUpText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .up .fourthUp:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .down {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectsPage .projectPageContent .down .firstDown,
+.projectsPage .projectPageContent .down .secondDown,
+.projectsPage .projectPageContent .down .thirdDown,
+.projectsPage .projectPageContent .down .fourthDown {
+  width: 15rem;
+  height: 25rem;
+  margin: 0.2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.projectsPage .projectPageContent .down .firstDown {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .down .firstDown .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .firstDown img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .down .firstDown .firstDownContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .down .firstDown h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .down .firstDown p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .down .firstDown .hash {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .firstDown .hash a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .down .firstDown .firstDownText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .down .firstDown .firstDownText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .down .firstDown .firstDownText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .down .firstDown:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .down .secondDown {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .down .secondDown .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .secondDown img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .down .secondDown .secondDownContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .down .secondDown h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .down .secondDown p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .down .secondDown .hash {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .secondDown .hash a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .down .secondDown .secondDownText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .down .secondDown .secondDownText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .down .secondDown .secondDownText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .down .secondDown:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .down .thirdDown {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .thirdDown img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .thirdDownContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .down .thirdDown h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .down .thirdDown p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .hash {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .hash a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .thirdDownText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .thirdDownText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .down .thirdDown .thirdDownText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .down .thirdDown:hover .display {
+  height: 45%;
+}
+
+.projectsPage .projectPageContent .down .fourthDown {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .display {
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .fourthDown img {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .fourthDownContent {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #76a0ae;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.projectsPage .projectPageContent .down .fourthDown h4 {
+  font-size: 1.5rem;
+  height: auto;
+  position: relative;
+  top: 1rem;
+}
+
+.projectsPage .projectPageContent .down .fourthDown p {
+  text-align: center;
+  height: 50%;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .hash {
+  background-color: #92a9a7;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .hash a {
+  position: relative;
+  text-decoration: none;
+  color: #fafffd;
+  font-size: 0.8rem;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .fourthDownText {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .fourthDownText a {
+  position: relative;
+  bottom: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 2rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #1b1f3b;
+  border-radius: 1rem;
+  background-color: #73bdd7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.projectsPage .projectPageContent .down .fourthDown .fourthDownText a:hover {
+  background-color: #dbeaef;
+}
+
+.projectsPage .projectPageContent .down .fourthDown:hover .display {
+  height: 45%;
+}
+
+.profilePage {
+  width: 100vw;
+  height: auto;
+  background-color: #73bdd7;
+  background-image: url(./img/BackgroundAboutMe.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profilePage .linkThird {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.profilePage .linkThird .linkThird a {
+  width: 100%;
+  height: 100%;
+}
+
+.profilePage .contentImgFull {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.profilePage .info {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  top: 4rem;
+  right: 2rem;
+  position: relative;
+  width: 28%;
+  height: 25%;
+  background-color: #73bdd7;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 41px 10px #000000;
+          box-shadow: 0px 0px 41px 10px #000000;
+}
+
+.profilePage .info p {
+  margin: 0.7rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+  color: #1b1f3b;
+}
+
+.profilePage .info .socialMedia {
+  width: 100%;
+  height: 30%;
+  background-color: #1b1f3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.profilePage .info .socialMedia a {
+  margin-right: 2rem;
+}
+
+.profilePage .info .socialMedia a i {
+  font-size: 2rem;
+  color: #73bdd7;
+}
+
+.profilePage .info .socialMedia a i:hover {
+  color: #fafffd;
+}
+
+.profilePage .contentImg {
+  width: 65%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.profilePage .contentImg svg {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #73bdd7;
+}
+
+.footer a {
+  font-weight: bold;
+  color: #1b1f3b;
+}
+
+.footer svg {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+  right: 0;
+  -webkit-transform: translate(-10px, -80px);
+          transform: translate(-10px, -80px);
+  z-index: 100;
+}
+
+.footerText::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  background-color: #1b1f3b;
+  left: 17%;
+}
+
+.footerText::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  background-color: #1b1f3b;
+  right: 17%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1b1f3b;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

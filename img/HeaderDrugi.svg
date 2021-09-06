@@ -1,0 +1,23 @@
+<svg width="1438" height="340" viewBox="0 0 1438 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="HeaderDrugi">
+<path id="path3068" d="M1341.65 245.122C1129.09 275.043 974.784 312.476 589.602 338.258C379.59 352.316 311.782 268.642 199.952 218.792L902.24 48.7494L1340 234.993L1341.65 245.122Z" fill="url(#paint0_radial)"/>
+<path id="path7043" d="M483.627 159.356C664.466 224.881 1156.83 311.469 1112.97 296.53C1407.04 336.061 1346.44 255.426 1313.18 223.237L1059.59 49.2681L544.913 62.5587L483.627 159.356Z" fill="url(#paint1_radial)"/>
+<path id="pathNeki" d="M1437.72 290.96L1437.72 -0.00012207L1.08728 -0.00012207L0 191.828V277.358C433.953 177.943 524.019 173.663 790.053 133.764C1033.14 97.3229 1205.83 243.568 1437.74 290.965L1437.72 290.96Z" fill="url(#paint2_linear)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(770.797 194.267) rotate(-180) scale(571.409 146.272)">
+<stop stop-color="#C8FEFE"/>
+<stop offset="1" stop-color="#EDF9FF"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1092.27 42.6757) rotate(177.005) scale(646.66 281.729)">
+<stop stop-color="#3B84A4"/>
+<stop offset="0.55655" stop-color="#92DDF3"/>
+<stop offset="1" stop-color="#E7FAFF"/>
+</radialGradient>
+<linearGradient id="paint2_linear" x1="538.852" y1="-158.832" x2="541.411" y2="302.605" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B84A4"/>
+<stop offset="0.56481" stop-color="#92DDF3"/>
+<stop offset="1" stop-color="#E7FAFF"/>
+</linearGradient>
+</defs>
+</svg>
