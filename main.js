@@ -7,6 +7,7 @@ const all = document.querySelectorAll('.homePage , .aboutMePage , .projectsPage 
 
 
 
+//close menu by click anywhere 
 
 all[0].addEventListener("click" , e => {
     document.querySelector('.sen').style.display = "flex";
@@ -29,15 +30,13 @@ all[4].addEventListener("click" , e => {
     menu.style.width = "0vw";
     });
 
+//sendwich menu
 
 sandwich.addEventListener("click", function() {
    
     document.querySelector('.sen').style.display = "none";
     document.querySelector('.x').style.display = "flex";
     menu.style.width = "40vw"; 
-    
-
-    
     });
 
 close.addEventListener("click", function() {
@@ -50,4 +49,14 @@ close.addEventListener("click", function() {
 
 
 
-        
+//preloader
+
+const rootElement = document.documentElement;
+
+window.addEventListener('load', (e) => {
+    document.querySelector(".container").style.display = "none"; 
+    rootElement.style.overflowY = "scroll";
+    
+  });
+
+  
